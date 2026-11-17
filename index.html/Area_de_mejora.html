@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de usuario - Sistema de atención de salas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f3f8;
+            color: #44404a;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #ded5eb;
+            color: #40364e;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        nav {
+            background-color: #eee9f4;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #d9d0e3;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #625276;
+            text-decoration: none;
+            margin: 5px 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 25px auto;
+            padding: 0 18px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 10px;
+            border: 1px solid #e5dfeb;
+        }
+
+        h2 {
+            color: #725e8b;
+            border-bottom: 2px solid #e5dced;
+            padding-bottom: 8px;
+            font-size: 21px;
+        }
+
+        h3 {
+            color: #796b89;
+            font-size: 17px;
+        }
+
+        .nota {
+            background-color: #f1edf6;
+            border-left: 4px solid #a895bd;
+            padding: 12px 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #ded5eb;
+            color: #51465e;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .subtitulo {
+            color: #78668d;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            nav {
+                display: none;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Manual de usuario</h1>
+    <p>Sistema de atención y reporte de salas de cómputo</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#alumnos">Aplicación de alumnos</a>
+    <a href="#maestros">Aplicación de maestros</a>
+    <a href="#proceso">Funcionamiento</a>
+    <a href="#recomendaciones">Recomendaciones</a>
+</nav>
+
+<main>
+
+    <section id="inicio">
+        <h2>1. Introducción</h2>
+        <p>
+            Este manual tiene como finalidad explicar el funcionamiento
+            del sistema de atención de salas de cómputo, así como orientar
+            a los usuarios sobre la manera correcta de utilizarlo.
+        </p>
+
+        <p>
+            La aplicación está dividida en dos partes: una dirigida a los
+            alumnos y otra destinada a los maestros o administradores.
+            Ambas trabajan en conjunto para recibir información sobre
+            las necesidades que se presenten dentro de las salas.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Objetivo del sistema</h2>
+        <p>
+            Facilitar la comunicación entre los alumnos, los maestros
+            y el encargado de las salas de cómputo, mediante una
+            aplicación que permita registrar información y comunicar
+            los problemas o necesidades que se presenten.
+        </p>
+    </section>
+
+    <section id="alumnos">
+        <h2>3. Aplicación para alumnos</h2>
+
+        <p>
+            Esta sección está diseñada para que los alumnos puedan
+            ingresar sus datos y comunicar las situaciones o necesidades
+            que encuentren en las salas de cómputo.
+        </p>
+
+        <h3>3.1 Ingreso al sistema</h3>
+        <p>
+            Al abrir la aplicación, el alumno deberá ingresar los datos
+            solicitados para identificarse:
+        </p>
+
+        <ul>
+            <li>Correo institucional o número de control.</li>
+            <li>Nombre del alumno.</li>
+        </ul>
+
+        <h3>3.2 Acceso al cuestionario</h3>
+        <p>
+            Después de ingresar sus datos, el sistema permitirá continuar
+            a un cuestionario. En esta sección, el alumno podrá escribir
+            sus respuestas relacionadas con la situación que desea reportar
+            dentro de la sala de cómputo.
+        </p>
+
+        <h3>3.3 Envío de información</h3>
+        <p>
+            Una vez que el alumno termine de responder, la información
+            será enviada a la aplicación de maestros para que pueda
+            ser revisada.
+        </p>
+
+        <div class="nota">
+            <strong>Importante:</strong> El alumno debe proporcionar
+            información clara y correcta para facilitar la atención
+            de su reporte.
+        </div>
+    </section>
+
+    <section id="maestros">
+        <h2>4. Aplicación para maestros</h2>
+
+        <p>
+            La aplicación de maestros funciona como el apartado
+            administrativo del sistema. Su principal función es recibir
+            y consultar la información que envían los alumnos.
+        </p>
+
+        <h3>4.1 Recepción de reportes</h3>
+        <p>
+            Cuando un alumno envía sus respuestas, estas llegan al
+            apartado de maestros, donde se recibe la información
+            correspondiente al reporte.
+        </p>
+
+        <h3>4.2 Revisión de la información</h3>
+        <p>
+            El maestro o administrador podrá revisar los datos del
+            alumno y las respuestas que fueron enviadas desde la
+            aplicación de alumnos.
+        </p>
+
+        <h3>4.3 Atención del reporte</h3>
+        <p>
+            De acuerdo con las respuestas recibidas y las condiciones
+            establecidas en el sistema, se determinará cuándo es
+            necesario solicitar la atención del encargado de la sala
+            de cómputo.
+        </p>
+    </section>
+
+    <section id="proceso">
+        <h2>5. Funcionamiento general del sistema</h2>
+
+        <p>
+            Las dos aplicaciones trabajan de manera relacionada.
+            El proceso general se realiza de la siguiente forma:
+        </p>
+
+        <ol>
+            <li>El alumno abre la aplicación destinada a estudiantes.</li>
+            <li>Ingresa su correo institucional o número de control y su nombre.</li>
+            <li>El sistema le permite acceder al cuestionario.</li>
+            <li>El alumno escribe sus respuestas y envía la información.</li>
+            <li>Los datos llegan a la aplicación de maestros.</li>
+            <li>El maestro o administrador revisa las respuestas recibidas.</li>
+            <li>Según la información y las condiciones del sistema, se solicita la atención del encargado de la sala.</li>
+        </ol>
+
+        <div class="nota">
+            <strong>Nota:</strong> La atención del encargado depende
+            de la información recibida y de las condiciones que se
+            establezcan dentro de la aplicación.
+        </div>
+    </section>
+
+    <section id="recomendaciones">
+        <h2>6. Recomendaciones de uso</h2>
+
+        <ul>
+            <li>Ingresar correctamente los datos solicitados.</li>
+            <li>Leer con atención las indicaciones de la aplicación.</li>
+            <li>Escribir respuestas claras y relacionadas con el reporte.</li>
+            <li>Evitar enviar información incorrecta o incompleta.</li>
+            <li>Revisar que el reporte haya sido enviado correctamente.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Conclusión</h2>
+        <p>
+            El sistema busca mejorar la comunicación y la atención
+            de las necesidades que se presentan en las salas de cómputo.
+            Mediante la participación de alumnos y maestros, la
+            información puede llegar de manera organizada al personal
+            encargado, facilitando el seguimiento de cada reporte.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Manual de usuario | Sistema de atención de salas de cómputo</p>
+</footer>
+
+</body>
+</html>
